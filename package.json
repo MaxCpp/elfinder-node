@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "A NodeJS connector/backend for elFinder file manager",
   "main": "src/elfinder.js",
-  "author": "d.kyeremeh@dekyfin.com",
+  "author": "maxcpp@gmail.com",
   "license": "MIT",
   "dependencies": {
     "adm-zip": "^0.5.10",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dekyfin/elfinder-node.git"
+    "url": "git+https://github.com/MaxCpp/elfinder-node.git"
   },
   "keywords": [
     "file manager",
@@ -49,7 +49,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/dekyfin/elfinder-node/issues"
+    "url": "https://github.com/MaxCpp/elfinder-node/issues"
   },
-  "homepage": "https://github.com/dekyfin/elfinder-node#readme"
+  "homepage": "https://github.com/MaxCpp/elfinder-node#readme"
 }
