@@ -5,12 +5,17 @@ const app = express();
 const elFinder = require('../');
 
 const uploadsDir = resolve(__dirname, '../media/uploads');
+console.log('uploadsDir', uploadsDir)
 const roots = [
   {
+    // id: 'v0_Lw',
     driver: elFinder.LocalFileStorage,
-    URL: '/uploads/', //Required
-    path: uploadsDir, //Required
+    URL: '/uploads/',
+    path: uploadsDir,
     permissions: { read: 1, write: 1, lock: 0 },
+    // tmbPath: uploadsDir + '/.tmb', // Путь для миниатюр
+    // tmbURL: '/media/uploads/.tmb',                      // URL для миниатюр
+    // uploadAllow: ['image', 'text']
   },
 ];
 

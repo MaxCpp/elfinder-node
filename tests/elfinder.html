@@ -38,7 +38,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.28/js/extras/editors.default.js"></script>
 
     <!-- GoogleDocs Quicklook plugin for GoogleDrive Volume (OPTIONAL) -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.28/js/extras/quicklook.googledocs.js"></script>
+<!--    <script src="//cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.28/js/extras/quicklook.googledocs.js"></script>-->
 
     <!-- elFinder initialization (REQUIRED) -->
     <script type="text/javascript" charset="utf-8">
@@ -52,6 +52,7 @@
             cssAutoLoad: false, // Disable CSS auto loading
             baseUrl: 'https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.28/', // Base URL to css/*, js/*
             url: '/connector', // connector URL (REQUIRED)
+			requestType: 'post',
           },
           // 2nd Arg - before boot up function
           function (fm, extraObj) {

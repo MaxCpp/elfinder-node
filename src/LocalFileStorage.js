@@ -166,6 +166,10 @@ api.open = async function (opts, res) {
   if (!dirExists) target = helpers.decode(encodedRoot);
 
   let files = (await fs.readdir(target.absolutePath).catch(console.log)) || [];
+
+  // Исключаем папку ".tmb" из списка
+  files = files.filter(file => file !== '.tmb');
+
   const tasks = files.map(async (file) =>
     helpers.info(path.join(target.absolutePath, file))
   );

@@ -67,11 +67,14 @@ exports.decode = function (dir) {
     .replace(/_/g, '/')
     .replace(/\./g, '=');
 
-  relative = base64.decode(relative + '==', {
-    inputEncoding: 'Base64',
-  });
+  // relative = base64.decode(relative + '==', {
+  //   inputEncoding: 'Base64',
+  // });
+  relative = Buffer.from(relative + '==', 'base64').toString();
+
   name = path.basename(relative);
   root = config.volumes[volume];
+  // console.log('6', volume, ':', root, ':', name, ':', relative, ':', path.join(root, relative))
   return {
     volume: volume,
     dir: root,
